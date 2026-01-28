@@ -33,6 +33,8 @@
         "param_video": ["-c:v", "libx264", "-crf", "23", "-preset", "fast"],
         "param_audio": ["-c:a", "aac", "-b:a", "192k"],
         "param_final": ["-c", "copy"],
+        "subtitle_disposition": false,
+        "subtitle_disposition_language": [],
         "extension": "mp4"
     },
     "REQUESTS": {
