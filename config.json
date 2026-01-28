@@ -1,0 +1,64 @@
+{
+    "DEFAULT": {
+        "debug": false,
+        "show_message": true,
+        "show_trending": false,
+        "fetch_domain_online": false,
+        "telegram_bot": false,
+        "bypass_dns": false
+    },
+    "OUT_FOLDER": {
+        "root_path": "Video",
+        "movie_folder_name": "Movie",
+        "serie_folder_name": "Serie",
+        "anime_folder_name": "Anime",
+        "map_episode_name": "%(episode_name) S%(season)E%(episode)",
+        "add_siteName": false
+    },
+    "QBIT_CONFIG": {
+        "host": "192.168.1.1",
+        "port": "5555",
+        "user": "root",
+        "pass": "toor"
+    },
+    "M3U8_DOWNLOAD": {
+        "default_video_workers": 8,
+        "default_audio_workers": 8,
+        "segment_timeout": 10,
+        "enable_retry": true,
+        "specific_list_audio": [
+            "*"
+        ],
+        "merge_subs": false,
+        "specific_list_subtitles": [
+            "eng"
+        ],
+        "limit_segment": 0,
+        "cleanup_tmp_folder": true,
+        "get_only_link": false
+    },
+    "M3U8_CONVERSION": {
+        "use_gpu": true,
+        "param_video": ["-c:v", "libx264", "-crf", "23", "-preset", "fast"],
+        "param_audio": ["-c:a", "aac", "-b:a", "192k"],
+        "param_subtitles": ["-c:s", "mov_text"],
+        "param_final": ["-c", "copy"],
+        "force_resolution": "Best",
+        "extension": "mp4"
+    },
+    "REQUESTS": {
+        "verify": false,
+        "timeout": 12,
+        "max_retry": 8
+    },
+    "HOOKS": {
+        "pre_run": [],
+        "post_run": []
+    },
+    "SITE_LOGIN": {
+        "crunchyroll": {
+            "device_id": "",
+            "etp_rt": ""
+        }
+    }
+}
