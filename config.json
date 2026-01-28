@@ -22,11 +22,24 @@
         "pass": "toor"
     },
     "M3U8_DOWNLOAD": {
+        "default_video_workers": 8,
+        "default_audio_workers": 8,
+        "segment_timeout": 10,
         "concurrent_download": true,
         "retry_count": 30,
         "thread_count": 12,
         "max_speed": "50MB",
         "check_segments_count": true,
+        "enable_retry": true,
+        "specific_list_audio": [
+            "*"
+        ],
+        "merge_subs": false,
+        "specific_list_subtitles": [
+            "eng"
+        ],
+        "limit_segment": 0,
+        "get_only_link": false,
         "cleanup_tmp_folder": true
     },
     "M3U8_CONVERSION": {
