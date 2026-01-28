@@ -23,6 +23,7 @@
     },
     "M3U8_DOWNLOAD": {
         "concurrent_download": true,
+        "retry_count": 30,
         "thread_count": 12,
         "max_speed": "50MB",
         "check_segments_count": true,
