@@ -26,7 +26,7 @@
         "thread_count": 12,
         "max_speed": "50MB",
         "check_segments_count": true,
-        "cleanup_tmp_folder": true,
+        "cleanup_tmp_folder": true
     },
     "M3U8_CONVERSION": {
         "use_gpu": false,
