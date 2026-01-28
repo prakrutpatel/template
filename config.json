@@ -25,6 +25,10 @@
         "default_video_workers": 8,
         "default_audio_workers": 8,
         "segment_timeout": 10,
+        "concurrent_download": true,
+        "thread_count": 12,
+        "max_speed": "50MB",
+        "check_segments_count": true,
         "enable_retry": true,
         "specific_list_audio": [
             "*"
@@ -38,7 +42,7 @@
         "get_only_link": false
     },
     "M3U8_CONVERSION": {
-        "use_gpu": true,
+        "use_gpu": false,
         "param_video": ["-c:v", "libx264", "-crf", "23", "-preset", "fast"],
         "param_audio": ["-c:a", "aac", "-b:a", "192k"],
         "param_subtitles": ["-c:s", "mov_text"],
